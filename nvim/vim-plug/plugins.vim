@@ -14,5 +14,23 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'scrooloose/NERDTree'
 	" Auto pairs for '(' '[' '{'
 	Plug 'jiangmiao/auto-pairs'
+	" Themes
+	Plug 'joshdick/onedark.vim'
+	Plug 'tyrannicaltoucan/vim-deep-space'
+	Plug 'wadackel/vim-dogrun'
+	Plug 'liuchengxu/space-vim-dark'
+	" Intellisense
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+	" Whichkey
+	Plug 'liuchengxu/vim-which-key'
+	" Startify
+	Plug 'mhinz/vim-startify'
 
 call plug#end()
+
+" Automagically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
