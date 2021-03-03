@@ -1,0 +1,11 @@
+{
+    "initial_working_directory": "~",
+    "posix_terminal_shell": "custom",
+    "custom_shell_command": "/usr/bin/fish",
+    "editor_keybindings": "vim",
+    "font_size_points": 12,
+    "editor_theme": "Dracula",
+    "jobs_tab_visibility": "shown",
+    "global_theme": "alternate",
+    "syntax_color_console": true
+}

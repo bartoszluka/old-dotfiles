@@ -53,7 +53,7 @@ nautilus/
 neofetch/
 nitrogen/
 nomacs/
-# nvim/
+nvim/
 obmenu-generator/
 # omf/
 openbox/
@@ -104,3 +104,11 @@ Trolltech.conf
 user-dirs.dirs
 user-dirs.locale
 yad.conf
+
+ranger/scope.sh
+
+ranger/plugins/__init__.py
+
+ranger/plugins/__pycache__/__init__.cpython-39.opt-1.pyc
+
+gitahead.com/GitAhead.conf
