@@ -1,0 +1,106 @@
+# alacritty/
+alob/
+# arcolinux-betterlockscreen/
+# arcolinux-logo/
+# arcolinux-tweak-tool/
+# arcolinux-welcome-app/
+# arcologout/
+# Atom/
+# autostart/
+# Bitwarden/
+# Bitwarden CLI/
+# BraveSoftware/
+# Caprine/
+# catfish/
+# chromium/
+coc/
+!coc/extensions/package.json
+# code-oss/
+# Code - OSS/
+# configstore/
+# conky/
+# dconf/
+# discord/
+# discordcanary/
+# Electron/
+# facebookmessenger-nativefier-7ab88e/
+fish/
+flameshot/
+# font-manager/
+fontconfig/
+# galculator/
+# gconf/
+# geany/
+# GitKraken/
+# google-chrome/
+# google-chrome-unstable/
+# gpick/
+# gtk-2.0/
+# gtk-3.0/
+# htop/
+i3/
+# inkscape/
+# kde.org/
+# Kvantum/
+# lazygit/
+# Mailspring/
+# Microsoft/
+# microsoft-edge/
+# Microsoft Teams - Preview/
+# mpv/
+# nano/
+# nautilus/
+neofetch/
+nitrogen/
+# nomacs/
+nvim/
+# obmenu-generator/
+omf/
+# openbox/
+# pamac/
+pfetch/
+# plank/
+polybar/
+# pragha/
+# pulse/
+# qt5ct/
+R/
+ranger/
+rofi/
+rstudio/
+RStudio/
+# session/
+# Skype/
+# skypeforlinux/
+# spotify/
+# spotify-tui/
+# spotifyd/
+# sublime-text-3/
+systemd/
+# teams/
+# termite/
+# Thunar/
+# tint2/
+variety/
+!variety/Favorites/
+# VirtualBox/
+# vivaldi/
+vlc/
+# volumeicon/
+# xfce4/
+# baloofileinformationrc
+# baloofilerc
+# compton.log
+# dolphinrc
+# kconf_updaterc
+# kdeglobals
+# knfsshare
+# mimeapps.list
+# pavucontrol.ini
+# picom.conf
+# QtProject.conf
+# trashrc
+# Trolltech.conf
+# user-dirs.dirs
+# user-dirs.locale
+# yad.conf
