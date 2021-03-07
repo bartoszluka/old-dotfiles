@@ -29,7 +29,7 @@ set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 
 #nvim as editor
 set -g EDITOR nvim
-# set -x MANPAGER "bat"
+set -x MANPAGER "bat"
 
 #vim
 abbr -a vim nvim
@@ -41,6 +41,10 @@ abbr -a cdala cd ~/.config/alacritty
 abbr -a cdc cd ~/.config
 abbr -a cdi cd ~/.config/i3
 abbr -a cdpb cd ~/.config/polybar
+#quiting
+abbr -a q exit
+abbr -a :q exit
+
 #list
 alias ls='exa --color=always --group-directories-first'
 # alias ls='ls --color=auto'

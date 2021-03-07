@@ -8,6 +8,7 @@ SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
 SETUVAR FZF_TMUX_HEIGHT:40\x25
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr__3A_q:exit
 SETUVAR _fish_abbr_cd_2E_2E_:cd\x20\x2e\x2e
 SETUVAR _fish_abbr_cd_2E_2E_cd:\x2e\x2e
 SETUVAR _fish_abbr_cdala:cd\x20/home/bartek/\x2econfig/alacritty
@@ -17,6 +18,7 @@ SETUVAR _fish_abbr_cdpb:cd\x20/home/bartek/\x2econfig/polybar
 SETUVAR _fish_abbr_p:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_pacs:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_pdw:pwd
+SETUVAR _fish_abbr_q:exit
 SETUVAR _fish_abbr_r:ranger
 SETUVAR _fish_abbr_sk:screenkey\x20\x2ds\x20small\x20\x2d\x2dscr\x201
 SETUVAR _fish_abbr_skk:killall\x20screenkey
@@ -67,4 +69,4 @@ SETUVAR fish_pager_color_completion:normal
 SETUVAR fish_pager_color_description:yellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
-SETUVAR fish_user_paths:/usr/bin/go\x1e/usr/lib/go\x1e/home/bartek/Scripts/
+SETUVAR fish_user_paths:/usr/bin/go\x1e/usr/lib/go\x1e/home/bartek/Scripts/\x1e/home/bartek/\x2elocal/bin/
