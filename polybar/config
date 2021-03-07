@@ -77,7 +77,7 @@ volume-max = #bf616a
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
 monitor = ${env:MONITOR}
-;monitor-fallback = DP-0
+;monitor-fallback = HDMI1
 monitor-strict = false
 override-redirect = false
 bottom = false
@@ -113,10 +113,10 @@ module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Noto Sans:size=10;0"
+# font-0 = "Noto Sans:size=10;0"
 font-1 = "FontAwesome:size=10;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
-
 
 ################################################################################
 ################################################################################
@@ -128,6 +128,7 @@ modules-left = i3
 # modules-center = kernel
 modules-center = xwindow 
 modules-right = variety pavolume xbrightness wireless-network date 
+
 separator = |
 
 ;dim-value = 1.0
@@ -1204,6 +1205,33 @@ format-underline = #FFBB00
 
 ################################################################################
 
+[module/xbrightness]
+type = custom/script
+exec = /home/bartek/.config/polybar/scripts/brightness.sh
+interval = 1
+
+label = %output%%
+format-prefix = "   "
+
+format-prefix-foreground = ${colors.foreground}
+format-prefix-background = ${colors.background}
+format-prefix-underline = #9f78e1
+format-underline = #9f78e1
+bar-width = 10
+bar-indicator = 
+bar-indicator-foreground = #fff
+bar-indicator-font = 2
+bar-fill = 
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = 
+bar-empty-font = 2
+bar-empty-foreground = #fff
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+################################################################################
+
 [module/backlight-acpi]
 inherit = module/xbacklight
 type = internal/backlight
@@ -1693,9 +1721,8 @@ format-connected-background = ${colors.background}
 
 [module/pacman-updates]
 type = custom/script
-exec = pacman -Qu | wc -l
-# exec = yay -Qu | wc -l
-# exec = checkupdates | wc -l
+;exec = pacman -Qu | wc -l
+exec = checkupdates | wc -l
 interval = 1000
 label = Repo: %output%
 format-foreground = ${colors.foreground}
@@ -1732,7 +1759,6 @@ click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
 scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
 scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
 format-underline = #3EC13F
-# format-foreground = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
@@ -2000,8 +2026,7 @@ label-disconnected-foreground = ${colors.foreground}
 [module/wireless-network]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-interface = wlp0s20f0u2
-# interface = wlp3s0
+interface = wlp3s0
 interval = 3.0
 label-connected = %essid%
 
@@ -2035,33 +2060,6 @@ ramp-signal-5 = ▆
 ramp-signal-6 = ▇
 ramp-signal-7 = █
 ramp-signal-foreground = #7e52c6
-
-################################################################################
-
-[module/xbrightness]
-type = custom/script
-exec = /home/bartek/.config/polybar/scripts/brightness.sh
-interval = 1
-
-label = %output%%
-format-prefix = "   "
-
-format-prefix-foreground = ${colors.foreground}
-format-prefix-background = ${colors.background}
-format-prefix-underline = #9f78e1
-format-underline = #9f78e1
-bar-width = 10
-bar-indicator = 
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = 
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = 
-bar-empty-font = 2
-bar-empty-foreground = #fff
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
 
 ################################################################################
 

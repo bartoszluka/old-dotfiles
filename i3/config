@@ -672,7 +672,7 @@ for_window [class="Font-manager"] floating enable
 for_window [class="Nitrogen"] floating disable
 for_window [class="Pavucontrol"] floating disable
 for_window [class="Peek"] floating enable
-for_window [class="^Skype$"] floating enable
+for_window [class="^Skype$"] floating disable
 for_window [class="^Spotify$"] floating disable
 for_window [class="System-config-printer.py"] floating enable
 for_window [class="Unetbootin.elf"] floating enable
@@ -688,9 +688,9 @@ for_window [class="Xfce4-taskmanager"] floating enable
 
 #for_window [instance="gimp"] floating disable
 for_window [instance="script-fu"] border normal
-for_window [class="variety"] floating enable
-for_window [title="Variety Preferences"] floating enable
-for_window [title="Variety Images"] floating enable
+for_window [class="[Vv]ariety"] floating enable
+# for_window [title="Variety Preferences"] floating enable
+# for_window [title="Variety Images"] floating enable
 
 
 for_window [title="Copying"] floating enable
