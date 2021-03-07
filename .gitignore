@@ -1,4 +1,6 @@
 # alacritty/
+awesome/
+obs-studio/
 alob/
 arcolinux-betterlockscreen/
 arcolinux-logo/
@@ -38,11 +40,12 @@ gpick/
 gtk-2.0/
 gtk-3.0/
 htop/
-i3/
+# i3/
 inkscape/
 kde.org/
 Kvantum/
 lazygit/
+llpp.conf
 Mailspring/
 Microsoft/
 microsoft-edge/
@@ -78,6 +81,7 @@ spotifyd/
 sublime-text-3/
 systemd/
 teams/
+teams-for-linux/
 termite/
 Thunar/
 tint2/
