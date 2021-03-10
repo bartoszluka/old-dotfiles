@@ -29,7 +29,7 @@ set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 
 #nvim as editor
 set -g EDITOR nvim
-set -x MANPAGER "bat"
+# set -x MANPAGER "bat"
 
 #vim
 abbr -a vim nvim

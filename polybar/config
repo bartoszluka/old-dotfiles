@@ -127,7 +127,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 modules-left = i3 
 # modules-center = kernel
 modules-center = xwindow 
-modules-right = variety pavolume xbrightness wireless-network date time
+modules-right = variety pavolume xbrightness wireless-network time
 
 separator = |
 
@@ -1408,19 +1408,25 @@ label = Cpu %percentage:3%%
 
 [module/time]
 ;https://github.com/jaagr/polybar/wiki/Module:-date
-type = internal/date
+type = custom/script
 ; Seconds to sleep between updates
 interval = 1
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --popup &
+; click-right = 
+label = %output%
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-time = %H:%M
-time-alt = %H:%M:%S
-format-prefix = "🕓⌛ "
+; time = %H:%M
+; time-alt = %H:%M:%S
+format-prefix = "  "
 format-prefix-foreground = #c1941a
 format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-label = %date% %time%
+; format-background = ${colors.alt-background}
+; format-foreground = ${colors.alt-foreground}
+; label = %date% %time%
 
 
 ################################################################################
@@ -2048,8 +2054,8 @@ interface = wlp0s20f0u2
 interval = 3.0
 label-connected = %essid%
 
-format-connected = <label-connected>
-;format-connected = <ramp-signal> <label-connected>
+; format-connected = <label-connected>
+format-connected = <label-connected> <ramp-signal> 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
 format-connected-prefix = "  "

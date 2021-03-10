@@ -519,6 +519,10 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #not workspace related
 
+# grab color under cursor
+bindsym $mod+Mod1+c exec --no-startup-id grabc | xclip
+# bindsym $mod+mod1+c exec 
+
 # ArcoLinux Welcome App
 bindsym control+mod1+w exec --no-startup-id arcolinux-welcome-app
 
@@ -588,6 +592,7 @@ bindsym control+mod1+b exec bitwarden &
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 #qwerty/azerty conflict with w
 bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
+# bindsym $mod+w exec --no-startup-id exo-open --launch vivaldi-stable;focus
 bindsym control+mod1+f exec --no-startup-id firefox;focus
 bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
 bindsym control+mod1+g exec --no-startup-id chromium;focus
@@ -709,6 +714,8 @@ for_window [window_role="setup"] floating enable
 
 for_window [title="Add/Remove Software"] floating enable
 
+
+for_window [title="calendar"] floating enable
 
 
 #####################################################################################################################

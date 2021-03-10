@@ -1,0 +1,50 @@
+{
+	"name": "Vimium C",
+	"@time": "8.03.2021, 23:37:10",
+	"time": 1615243030938,
+	"environment": {
+		"extension": "1.88.2",
+		"platform": "win",
+		"chrome": 89
+	},
+	"exclusionRules": [
+		{
+			"pattern": ":https://mail.google.com/",
+			"passKeys": ""
+		},
+		{
+			"pattern": ":https://www.youtube.com/",
+			"passKeys": "f i "
+		},
+		{
+			"pattern": ":https://www.loom.com/",
+			"passKeys": "f "
+		},
+		{
+			"pattern": ":https://github.com/",
+			"passKeys": "/ "
+		},
+		{
+			"pattern": ":https://www.overleaf.com/",
+			"passKeys": "^ g i "
+		},
+		{
+			"pattern": ":https://www.cstimer.net/",
+			"passKeys": "^ J K O "
+		},
+		{
+			"pattern": ":https://vim-adventures.com/",
+			"passKeys": ""
+		},
+		{
+			"pattern": ":https://play.typeracer.com/",
+			"passKeys": ""
+		},
+		{
+			"pattern": ":https://www.keybr.com/",
+			"passKeys": "^ H J K L "
+		}
+	],
+	"nextPatterns": "下一封,下页,下一页,下一章,后一页,next,more,newer,>,›,→,»,≫,>>,następny, następna",
+	"previousPatterns": "上一封,上页,上一页,上一章,前一页,prev,previous,back,older,<,‹,←,«,≪,<<,poprzednia,poprzedni"
+}

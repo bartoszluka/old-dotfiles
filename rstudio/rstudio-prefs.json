@@ -7,5 +7,6 @@
     "editor_theme": "Dracula",
     "jobs_tab_visibility": "shown",
     "global_theme": "alternate",
-    "syntax_color_console": true
+    "syntax_color_console": true,
+    "source_with_echo": true
 }
