@@ -455,6 +455,9 @@ exec --no-startup-id cadmus &
 # flameshot - screenshot tool 
 exec --no-startup-id flameshot &
 
+# ulauncher - application launcher
+exec --no-startup-id ulauncher &
+
 # redshift 
 exec --no-startup-id redshift-gtk -l 52.29:21.10
 # exec --no-startup-id redshift-gtk -c ~/.config/redshift.conf
