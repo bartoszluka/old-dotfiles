@@ -716,6 +716,7 @@ for_window [title="Add/Remove Software"] floating enable
 
 
 for_window [title="calendar"] floating enable
+for_window [title="Ulauncher Preferences"] floating enable
 
 
 #####################################################################################################################
