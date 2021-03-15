@@ -117,3 +117,6 @@ ranger/plugins/__init__.py
 ranger/plugins/__pycache__/__init__.cpython-39.opt-1.pyc
 
 gitahead.com/GitAhead.conf
+
+libfm/libfm.conf
+# flameshot/flameshot.ini
