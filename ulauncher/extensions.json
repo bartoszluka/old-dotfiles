@@ -1,51 +1,52 @@
 {
-    "com.github.mikebarkmin.ulauncher-duckduckgo": {
-        "id": "com.github.mikebarkmin.ulauncher-duckduckgo",
-        "url": "https://github.com/mikebarkmin/ulauncher-duckduckgo",
-        "updated_at": "2021-03-15T10:34:10.025070",
-        "last_commit": "2057c9ea94e949b1018cac7afdadb873cae488f8",
-        "last_commit_time": "2020-12-15T07:23:32"
-    },
-    "com.github.hippo-o-matic.ulauncher-qalc": {
-        "id": "com.github.hippo-o-matic.ulauncher-qalc",
-        "url": "https://github.com/hippo-o-matic/ulauncher-qalc",
-        "updated_at": "2021-03-15T10:35:01.206162",
-        "last_commit": "45882831f57c265ee3b4bf47cdb862379d47a89a",
-        "last_commit_time": "2021-03-03T03:33:36"
-    },
-    "com.github.nastuzzisamy.ulauncher-custom-scripts": {
-        "id": "com.github.nastuzzisamy.ulauncher-custom-scripts",
-        "url": "https://github.com/NastuzziSamy/ulauncher-custom-scripts",
-        "updated_at": "2021-03-15T10:35:22.719483",
-        "last_commit": "0ab670e00114040321f8286ee9375a944d8c86d8",
-        "last_commit_time": "2020-11-23T16:40:44"
-    },
-    "com.github.iboyperson.ulauncher-system": {
-        "id": "com.github.iboyperson.ulauncher-system",
-        "url": "https://github.com/iboyperson/ulauncher-system",
-        "updated_at": "2021-03-15T10:52:23.656465",
-        "last_commit": "8eb66ce67a5e5f2d79e22f0d9b90d5305d53cb76",
-        "last_commit_time": "2021-03-08T15:20:58"
-    },
-    "com.github.kleber-swf.ulauncher-turn-off-screen": {
-        "id": "com.github.kleber-swf.ulauncher-turn-off-screen",
-        "url": "https://github.com/kleber-swf/ulauncher-turn-off-screen",
-        "updated_at": "2021-03-15T10:52:35.631612",
-        "last_commit": "a461b89706008fcb5605b6e800fec29308b70a04",
-        "last_commit_time": "2020-11-18T20:05:35"
-    },
-    "com.github.nastuzzisamy.ulauncher-translate": {
-        "id": "com.github.nastuzzisamy.ulauncher-translate",
-        "url": "https://github.com/NastuzziSamy/ulauncher-translate",
-        "updated_at": "2021-03-15T10:52:47.930661",
-        "last_commit": "563a5eb4503fb445265a430ef29baf3e4e07abb9",
-        "last_commit_time": "2021-02-26T11:17:31"
-    },
-    "com.github.kbialek.ulauncher-bitwarden": {
-        "id": "com.github.kbialek.ulauncher-bitwarden",
-        "url": "https://github.com/kbialek/ulauncher-bitwarden",
-        "updated_at": "2021-03-15T10:53:26.586672",
-        "last_commit": "aaa8f4331b4dad350f1fe4e76e64b3e9d73074d5",
-        "last_commit_time": "2020-11-14T17:09:56"
-    }
+  "com.github.mikebarkmin.ulauncher-duckduckgo": {
+    "id": "com.github.mikebarkmin.ulauncher-duckduckgo",
+    "url": "https://github.com/mikebarkmin/ulauncher-duckduckgo",
+    "updated_at": "2021-03-15T10:34:10.025070",
+    "last_commit": "2057c9ea94e949b1018cac7afdadb873cae488f8",
+    "last_commit_time": "2020-12-15T07:23:32"
+  },
+  "com.github.hippo-o-matic.ulauncher-qalc": {
+    "id": "com.github.hippo-o-matic.ulauncher-qalc",
+    "url": "https://github.com/hippo-o-matic/ulauncher-qalc",
+    "updated_at": "2021-03-15T10:35:01.206162",
+    "last_commit": "45882831f57c265ee3b4bf47cdb862379d47a89a",
+    "last_commit_time": "2021-03-03T03:33:36"
+  },
+  "com.github.nastuzzisamy.ulauncher-custom-scripts": {
+    "id": "com.github.nastuzzisamy.ulauncher-custom-scripts",
+    "url": "https://github.com/NastuzziSamy/ulauncher-custom-scripts",
+    "updated_at": "2021-03-15T10:35:22.719483",
+    "last_commit": "0ab670e00114040321f8286ee9375a944d8c86d8",
+    "last_commit_time": "2020-11-23T16:40:44"
+  },
+  "com.github.iboyperson.ulauncher-system": {
+    "id": "com.github.iboyperson.ulauncher-system",
+    "url": "https://github.com/iboyperson/ulauncher-system",
+    "updated_at": "2021-03-15T10:52:23.656465",
+    "last_commit": "8eb66ce67a5e5f2d79e22f0d9b90d5305d53cb76",
+    "last_commit_time": "2021-03-08T15:20:58"
+  },
+  "com.github.kleber-swf.ulauncher-turn-off-screen": {
+    "id": "com.github.kleber-swf.ulauncher-turn-off-screen",
+    "url": "https://github.com/kleber-swf/ulauncher-turn-off-screen",
+    "updated_at": "2021-03-15T10:52:35.631612",
+    "last_commit": "a461b89706008fcb5605b6e800fec29308b70a04",
+    "last_commit_time": "2020-11-18T20:05:35"
+  },
+  "com.github.nastuzzisamy.ulauncher-translate": {
+    "id": "com.github.nastuzzisamy.ulauncher-translate",
+    "url": "https://github.com/NastuzziSamy/ulauncher-translate",
+    "updated_at": "2021-03-15T10:52:47.930661",
+    "last_commit": "563a5eb4503fb445265a430ef29baf3e4e07abb9",
+    "last_commit_time": "2021-02-26T11:17:31"
+  },
+  "com.github.kbialek.ulauncher-bitwarden": {
+    "id": "com.github.kbialek.ulauncher-bitwarden",
+    "url": "https://github.com/kbialek/ulauncher-bitwarden",
+    "updated_at": "2021-03-15T10:53:26.586672",
+    "last_commit": "aaa8f4331b4dad350f1fe4e76e64b3e9d73074d5",
+    "last_commit_time": "2020-11-14T17:09:56"
+  }
 }
+

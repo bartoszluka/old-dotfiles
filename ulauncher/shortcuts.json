@@ -1,23 +1,22 @@
 {
-  "97f9d29c-ff42-4cea-9c4e-35d486b3f89e": {
-    "id": "97f9d29c-ff42-4cea-9c4e-35d486b3f89e",
-    "name": "Stack Overflow",
-    "keyword": "so",
-    "cmd": "http://stackoverflow.com/search?q=%s",
-    "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
-    "is_default_search": true,
-    "run_without_argument": false,
-    "added": 1615800575.2937887
-  },
-  "a7af5632-cc62-46a5-9665-7a434e8dea57": {
-    "id": "a7af5632-cc62-46a5-9665-7a434e8dea57",
-    "name": "Wikipedia",
-    "keyword": "wiki",
-    "cmd": "https://en.wikipedia.org/wiki/%s",
-    "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
-    "is_default_search": true,
-    "run_without_argument": false,
-    "added": 1615800575.293805
-  }
+    "97f9d29c-ff42-4cea-9c4e-35d486b3f89e": {
+        "id": "97f9d29c-ff42-4cea-9c4e-35d486b3f89e",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "http://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1615800575.2937887
+    },
+    "a7af5632-cc62-46a5-9665-7a434e8dea57": {
+        "id": "a7af5632-cc62-46a5-9665-7a434e8dea57",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1615800575.293805
+    }
 }
-
