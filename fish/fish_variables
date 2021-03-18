@@ -15,6 +15,7 @@ SETUVAR _fish_abbr_cdala:cd\x20/home/bartek/\x2econfig/alacritty
 SETUVAR _fish_abbr_cdc:cd\x20/home/bartek/\x2econfig
 SETUVAR _fish_abbr_cdi:cd\x20/home/bartek/\x2econfig/i3
 SETUVAR _fish_abbr_cdpb:cd\x20/home/bartek/\x2econfig/polybar
+SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_p:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_pacs:sudo\x20pacman\x20\x2dS
 SETUVAR _fish_abbr_pdw:pwd

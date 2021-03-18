@@ -31,16 +31,22 @@ set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 set -g EDITOR nvim
 # set -x MANPAGER "bat"
 
+#lazygit
+abbr -a lg lazygit
+
 #vim
 abbr -a vim nvim
 abbr -a v nvim
+
 #ranger
 abbr -a r ranger
+
 #some useful dirs
 abbr -a cdala cd ~/.config/alacritty
 abbr -a cdc cd ~/.config
 abbr -a cdi cd ~/.config/i3
 abbr -a cdpb cd ~/.config/polybar
+
 #quiting
 abbr -a q exit
 abbr -a :q exit
