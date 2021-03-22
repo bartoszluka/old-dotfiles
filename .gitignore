@@ -120,3 +120,6 @@ gitahead.com/GitAhead.conf
 
 libfm/libfm.conf
 # flameshot/flameshot.ini
+
+BetterDiscord/emote_data.json
+BetterDiscord/bdstorage.json
