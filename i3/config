@@ -393,7 +393,7 @@ assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"]                             
 #assign [class="Geary|Evolution"]                                                    → 9
 
 # Workspace 9 messeging
-assign [class="Discord"]                                                    → 9
+assign [class="discord|Discord"]                                                    → 9
 assign [class="Caprine"]                                                    → 9
 
 # Workspace 10 music related
@@ -414,7 +414,10 @@ assign [class="Spotify|spotify|spotifyd|spotify-tui|spt"]                       
 exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 
 # keyboard settings
-exec --no-startup-id /home/bartek/Scripts/keyboard-settings
+exec --no-startup-id $HOME/Scripts/keyboard-settings
+
+# swap mouse buttons
+exec --no-startup-id xmodmap $HOME/.config/.mouseconfig
 
 # Autotiling
 exec_always --no-startup-id autotiling
@@ -722,6 +725,8 @@ for_window [title="Add/Remove Software"] floating enable
 
 for_window [title="calendar"] floating enable
 for_window [title="Ulauncher Preferences"] floating enable
+
+for_window [title="nvidia-settings"] floating enable
 
 
 #####################################################################################################################
