@@ -9,6 +9,7 @@ arcolinux-welcome-app/
 arcologout/
 Atom/
 autostart/
+BetterDiscord/
 Bitwarden/
 Bitwarden CLI/
 BraveSoftware/
@@ -19,6 +20,7 @@ chromium/
 coc/
 !coc/extensions/package.json
 code-oss/
+Code/
 Code - OSS/
 configstore/
 conky/
@@ -46,6 +48,7 @@ inkscape/
 kde.org/
 Kvantum/
 lazygit/
+libreoffice/
 llpp.conf
 Mailspring/
 Microsoft/
@@ -123,3 +126,6 @@ libfm/libfm.conf
 
 BetterDiscord/emote_data.json
 BetterDiscord/bdstorage.json
+
+teams (deleted)/CS_skylib/CS_orgid#3Ab619d4fb-051c-4b3e-be91-4bc6bc515ed8.conf
+teams (deleted)/CS_skylib/CS_shared.conf
