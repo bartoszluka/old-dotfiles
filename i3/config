@@ -441,9 +441,9 @@ exec_always --no-startup-id autotiling
 for_window [class="Spotify"] focus
 
 #messeging
-exec --no-startup-id discord
+exec --no-startup-id discord --use-gl=desktop
 for_window [title="Discord"] focus
-exec --no-startup-id caprine
+exec --no-startup-id caprine --use-gl=desktop
 for_window [class="Caprine"] focus
 
 
@@ -498,7 +498,7 @@ exec --no-startup-id variety
 exec --no-startup-id xfce4-clipman
 
 # conky
-exec --no-startup-id conky -c ~/.config/i3/system-overview
+# exec --no-startup-id conky -c ~/.config/i3/system-overview
 
 # feh sets wallpaper
 exec --no-startup-id feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
@@ -599,8 +599,8 @@ bindsym control+mod1+b exec bitwarden &
 #workspace 1 related
 bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 #qwerty/azerty conflict with w
-bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
-# bindsym $mod+w exec --no-startup-id exo-open --launch vivaldi-stable;focus
+# bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
+bindsym $mod+w exec --no-startup-id exo-open --launch vivaldi-stable --use-gl=desktop;focus
 bindsym control+mod1+f exec --no-startup-id firefox;focus
 bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
 bindsym control+mod1+g exec --no-startup-id chromium;focus
@@ -608,7 +608,7 @@ bindsym control+mod1+g exec --no-startup-id chromium;focus
 #workspace 2 related
 #bindsym $mod+F2 exec --no-startup-id geany;focus
 #bindsym $mod+F2 exec --no-startup-id atom;focus
-bindsym $mod+F2 exec --no-startup-id code;focus
+bindsym $mod+F2 exec --no-startup-id code --use-gl=desktop;focus
 
 #workspace 3 related
 bindsym $mod+F3 exec --no-startup-id inkscape;focus
@@ -651,8 +651,8 @@ bindsym control+mod1+s exec --no-startup-id spotify;focus
 
 
 
-bindsym --release Print exec --no-startup-id flameshot gui
-
+# bindsym --release Print exec --no-startup-id flameshot gui
+bindsym Print exec  "maim --select --bordersize=2 --color=0.78,0.57,0.92 | xclip -selection clipboard -t image/png"
 bindsym Control+Print exec --no-startup-id scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
 # bindsym Print exec --no-startup-id xfce4-screenshooter -r
 bindsym Control+Shift+Print exec --no-startup-id gnome-screenshot -c -a
@@ -726,7 +726,7 @@ for_window [title="Add/Remove Software"] floating enable
 for_window [title="calendar"] floating enable
 for_window [title="Ulauncher Preferences"] floating enable
 
-for_window [title="nvidia-settings"] floating enable
+for_window [class="[Nn]vidia-settings"] floating enable
 
 
 #####################################################################################################################
@@ -811,16 +811,16 @@ bindsym XF86AudioStop exec --no-startup-id playerctl stop
 #####################################################################################################################
 
 # change by 10
-bindsym control+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set - 10
-bindsym control+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set + 10
+bindsym control+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set - 10 &
+bindsym control+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set + 10 &
 
 # change by 2
-bindsym control+shift+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set - 2
-bindsym control+shift+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set + 2
+bindsym control+shift+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set - 2 &
+bindsym control+shift+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set + 2 &
 
 # set to min/max
-bindsym control+$mod+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set 0
-bindsym control+$mod+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set 100
+bindsym control+$mod+F1 exec --no-startup-id /home/bartek/Scripts/brgt-set 0 &
+bindsym control+$mod+F2 exec --no-startup-id /home/bartek/Scripts/brgt-set 100 &
 
 #####################################################################################################################
 #################                          bar toggle                                               #################
@@ -939,9 +939,8 @@ mode "$mode_gaps_outer" {
 #####################################################################################################################
 
 #if you want transparency on non-focused windows, ...
-exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
-
-bindsym control+mod1+o exec --no-startup-id ~/.config/i3/scripts/picom-toggle.sh
+exec_always --no-startup-id picom --daemon --config $HOME/.config/i3/picom.conf 
+bindsym control+mod1+o exec --no-startup-id $HOME/.config/i3/scripts/picom-toggle.sh
 
 #####################################################################################################################
 #####################################################################################################################
