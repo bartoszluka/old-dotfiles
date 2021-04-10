@@ -441,9 +441,9 @@ exec_always --no-startup-id autotiling
 for_window [class="Spotify"] focus
 
 #messeging
-exec --no-startup-id discord --use-gl=desktop
+exec --no-startup-id discord
 for_window [title="Discord"] focus
-exec --no-startup-id caprine --use-gl=desktop
+exec --no-startup-id caprine
 for_window [class="Caprine"] focus
 
 
@@ -601,7 +601,7 @@ bindsym $mod+F1 exec --no-startup-id exo-open --launch webbrowser;focus
 #qwerty/azerty conflict with w
 # bindsym $mod+w exec --no-startup-id exo-open --launch webbrowser;focus
 # bindsym $mod+w exec --no-startup-id exo-open --launch vivaldi-stable
-bindsym $mod+w exec vivaldi-stable --use-gl=desktop &;focus
+bindsym $mod+w exec vivaldi-stable &;focus
 bindsym control+mod1+f exec --no-startup-id firefox;focus
 bindsym control+mod1+v exec --no-startup-id vivaldi-stable;focus
 bindsym control+mod1+g exec --no-startup-id chromium;focus
