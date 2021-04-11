@@ -1,0 +1,4 @@
+/* Disable favicon white shadow on active tab in dark theme */
+.tab-position .tab.active .tab-header .favicon {
+    filter: none !important;
+}
