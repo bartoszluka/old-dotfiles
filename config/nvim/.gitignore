@@ -1,0 +1,16 @@
+dein
+tags*
+.netrwhist
+pythonpath.vim
+nodepath.vim
+autoload/plugged/*
+vimspector-config/gadgets/*
+paths.vim
+session
+wiki/
+pack/
+utils/java/*
+lua-language-server/
+eclipse.jdt.ls/
+sessions/vim-config
+sessions/__LAST__
