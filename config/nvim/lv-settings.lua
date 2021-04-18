@@ -47,6 +47,9 @@ O.lua.autoformat = true
 O.tsserver.formatter = 'prettier'
 O.tsserver.linter = 'eslint'
 O.tsserver.autoformat = true
+O.tsserver.diagnostics.signs = true
+O.tsserver.diagnostics.underline = true
+O.tsserver.diagnostics.virtual_text = true
 
 -- json
 O.json.autoformat = true
