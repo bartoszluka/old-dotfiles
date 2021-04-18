@@ -1,20 +1,38 @@
-# NVCode
-
-![NVCode pic](./utils/images/nvim.png)
-
-## Install in one command
-
-The following will install this config if you have an existing config it will move it to `~/.config/nvim.old`
-
-This script only supports Mac, Ubuntu and Arch
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/nvim/master/utils/install.sh)
+```
+   _..._                             
+ .'   (_`.    _                         __     ___           
+:  .      :  | |   _   _ _ __   __ _ _ _\ \   / (_)_ __ ___  
+:)    ()  :  | |  | | | | '_ \ / _` | '__\ \ / /| | '_ ` _ \ 
+`.   .   .'  | |__| |_| | | | | (_| | |   \ V / | | | | | | |
+  `-...-'    |_____\__,_|_| |_|\__,_|_|    \_/  |_|_| |_| |_|
 ```
 
-## Install Neovim
 
-To get the latest and greatest:
+[![GitHub license](https://img.shields.io/github/license/ChristianChiarulli/LunarVim)](https://github.com/ChristianChiarulli/LunarVim/blob/master/LICENSE)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/ChristianChiarulli/lunarvim)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+<a href="https://patreon.com/chrisatmachine" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a>
+<a href="https://twitter.com/intent/follow?screen_name=chrisatmachine"><img src="https://img.shields.io/twitter/follow/chrisatmachine?style=social&logo=twitter" alt="follow on Twitter"></a>
+
+![LunarVim Demo](./utils/media/demo.png)
+
+1. This project aims to help one transition away from VSCode, and into a superior text editing experience. (Just making this clear)
+
+2. This is also a community project, if you would like to see support for a feature or [language](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md) consider making a PR.
+
+3. This project will do it's best to include core features you would expect from a modern IDE, while making it easy to add or remove what the user wants.
+
+## Install In One Command!
+
+Make sure you have the newest version of Neovim
+
+``` bash
+bash <(curl -s https://raw.githubusercontent.com/ChristianChiarulli/lunarvim/master/utils/installer/install.sh)
+```
+
+After installation run `nvim` and then `:PackerInstall`
+
+## Get the latest version of Neovim
 
 ```bash
 cd ~
@@ -25,178 +43,158 @@ sudo make CMAKE_BUILD_TYPE=Release install
 cd ~
 sudo rm -r neovim
 ```
-
-
-## Clone this repo into your config
-
+or if you are on Arch you can get it from the AUR
 ```bash
-git clone https://github.com/ChristianChiarulli/nvim.git ~/.config/nvim
+yay -S neovim-nightly-git
 ```
 
-## Install python & node support
 
-```bash
-pip install pynvim
-```
+## Clipboard Support
 
-```bash
-npm i -g neovim
-```
-
-## Install Neovim remote
-
-```bash
-pip install neovim-remote
-```
-
-This will install `nvr` to `~/.local/bin` so you will need to add the following to your `bashrc` or `zshrc`
-
-```
-export PATH=$HOME/.local/bin:$PATH
-```
-
-## Install clipboard support
-
-- On Mac pbcopy should be builtin
+- On Mac `pbcopy` should be built-in
 
 - Ubuntu
 
-  ```bash
-  sudo apt install xsel
-  ```
+    ```bash
+    sudo apt install xsel
+    ```
 
 - Arch
 
-  ```bash
-  sudo pacman -S xsel
-  ```
+    ```bash
+    sudo pacman -S xsel
+    ```
 
-## (Optional) Install python & node support using virtual environments
+- WSL2
 
-Make sure to add these paths somewhere in your config
+    Make sure ~/bin is in your path in this case.
+    
+    ```bash
+    curl -sLo/tmp/win32yank.zip https://github.com/equalsraf/win32yank/releases/download/v0.0.4/win32yank-x64.zip
+    unzip -p /tmp/win32yank.zip win32yank.exe > /tmp/win32yank.exe
+    chmod +x /tmp/win32yank.exe
+    mv /tmp/win32yank.exe ~/bin
+    ```
 
-```
-let g:python3_host_prog = expand("<path to python with pynvim installed>")
-let g:python3_host_prog = expand("~/.miniconda/envs/neovim/bin/python3.8") " <- example
+## LSP
 
-let g:node_host_prog = expand("<path to node with neovim installed>")
-let g:node_host_prog = expand("~/.nvm/versions/node/v12.16.1/bin/neovim-node-host") " <- example
-```
+To install a supported language server:
 
-## List of programs you should install
-
-- ranger
-- ueberzug
-- ripgrep
-- silver_searcher
-- fd
-- universal-ctags
-- lazy git
-- lazy docker
-- ninja (for lua lsp)
-
-Explanations and installation instruction can be found on my blog
-
-## Language Servers
-
-Some example language servers, if you just install them they will work with this config
-
-```bash
-npm i -g pyright
-npm i -g bash-language-server
-npm install -g vscode-css-languageserver-bin
-npm install -g dockerfile-language-server-nodejs
-npm install -g graphql-language-service-cli
-npm install -g vscode-html-languageserver-bin
-npm install -g typescript typescript-language-server
-npm install -g vscode-json-languageserver
-npm install -g vim-language-server
-npm install -g yaml-language-server
+``` bash
+  :LspInstall <your_language_server>
 ```
 
-Go [here](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
+Most common languages should be supported out of the box, if yours is not I would welcome a PR
 
-How to install the lua language server: [link](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone))
+For a more in depth LSP support:
+[link](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md)
 
-## For FAR to work
+## Useful Programs
+
+LunarVim depends on the following:
+
+``` bash
+ranger
+ueberzug
+ripgrep
+pynvim
+neovim-remote
+```
+
+## EFM server
+
+In order for linters and formatters to work you will need to install
+`efm-langserver`
 
 ```vim
-:UpdateRemotePlugins
+:LspInstall efm
 ```
 
-To replace in file make sure to specify `%:p`
-To replace across project specify `**/*.<your_extension>`
+## Formatters and Linters
 
-## Vim Gists
+**Python**
 
-To use **vim-gists** you will need to configure the following:
-
-```bash
-git config --global github.user <username>
+``` bash
+pip3 install --user flake8
+pip3 install --user yapf
 ```
 
-## VSCodium & Neo Vim Extension
+**Lua**
 
-[VSCodium](https://github.com/VSCodium/vscodium) contains build files to generate free release binaries of Microsoft's VS Code.
+``` bash
+luarocks install --server=https://luarocks.org/dev luaformatter
+```
 
-You can install it on multiple platforms:
+**Yaml, Json, Javascript, HTML, CSS**
 
-- Mac
+``` bash
+npm install -g prettier
+```
 
-  ```bash
-  brew cask install vscodium
-  ```
+**Markdown**
 
-- Arch
+``` bash
+pandoc
+```
 
-  ```bash
-  yay -s vscodium-bin
-  ```
+## De-bugging
 
-- Snap
+To set up your particular debugger, look here:
+[link](https://github.com/mfussenegger/nvim-dap/wiki/Debug-Adapter-installation)
 
-  ```bash
-  snap install codium
-  ```
+## VSCodium
 
-[The Neo Vim Extension](https://github.com/asvetliakov/vscode-neovim) is available in the VSCode marketplace
+I recommend you support Free/Libre versions if you plan to use VSCode:
 
-I recommend using this alongside the VSCode `which-key` extension
+- [VSCodium](https://vscodium.com/)
 
-Along with some of my config files you can find in `utils/vscode_config`
+- Article to get you set up with VSCodium: [link](https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/) 
+
+After installing the [Neovim
+extension](https://github.com/asvetliakov/vscode-neovim) in VSCode
+
+I recommend using this alongside the VSCode
+[which-key](https://github.com/VSpaceCode/vscode-which-key) extension
+
+You will also need `settings.json` and `keybindings.json` which can be
+found in utils/vscode\_config
+
+Point the nvim path to your `nvim` binary
+
+Point your `init.vim` path to:
+
+``` vim
+$HOME/.config/nvim/vimscript/lv-vscode/init.vim
+```
 
 ## TODO
 
-- Better Documentation
-  https://github.com/gennaro-tedesco/nvim-jqx
+**HIGH PRIORITY**
 
-  https://github.com/mattn/efm-langserver
+- Move user config into `config.lua` ts-comment string for react
+- From here I will update for bug fixes and implement low priority
+features when I have time
+- different key to advance through snippets
 
-  https://github.com/nvim-telescope/telescope-media-files.nvim
 
-  https://github.com/b3nj5m1n/kommentary
+**LOW PRIORITY**
 
-  https://github.com/nvim-lua/completion-nvim
+- vim vsnips dir should be co-located with config
+- list all binaries needed for formatters and linters (one day add in wiki)
+- Implement what I can from this java config:
+  [link](https://github.com/mfussenegger/nvim-jdtls/wiki/Sample-Configurations)
+  - better ui for code actions - formatting
+  - setup junit tests for java
+- look into emmet-ls
+- vim ult test
+- which-key all in lua
+- what is `fzy`
+- https://github.com/pwntester/octo.nvim
+- configure surround
+- Implement this for typescript https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils
+- look into tabnine
 
-  https://github.com/nvim-telescope/telescope-frecency.nvim
 
-## 0.5
+**PLUGIN BUGS**
 
-- native lsp (in progress)
-- treesitter (in progress)
-
-## LOW PRIORITY TODO
-
-If anyone reading this has any suggestions about implementing any of the following I will accept a PR, but these are not priority.
-
-- multiple cursors
-- galaxyline automatically grab colors from colorscheme
-- tpope/vim-dadbod
-- neovide
-- People asked about vimwiki I kinda hate it but maybe I'll add it
-- vimspector this is included but I don't plan on using it much
-  - can be used with jdb, pdb, gdb, etc...
-- nvim-dap and nvim-dap-virtual-text (ALL DEBUGGING IN NEOVIM IS CONFUSING AND HARD TO GET WORKING OR I'M JUST DUMB)
-- potentially manually link pylance
-- resize with arrows in addition to meta
-- how to support meta key on for macOS?
+REACT COMMENTING IS A NIGHTMARE (the filetype is just not recognized idk why)
