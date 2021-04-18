@@ -6,17 +6,19 @@ filled in as strings with either
 a global executable or a path to
 an executable
 ]]
-
 -- general
 O.auto_complete = true
 O.colorscheme = 'lunar'
-O.auto_close_tree = 0
+O.auto_close_tree = 1
 O.wrap_lines = false
+O.relative_number = false
 
 -- if you don't want all the parsers change this to a table of the ones you want
 O.treesitter.ensure_installed = "all"
 O.treesitter.ignore_install = {"haskell"}
 O.treesitter.highlight.enabled = true
+O.treesitter.playground.enabled = true
+O.treesitter.rainbow.enabled = false
 
 
 O.clang.diagnostics.virtual_text = false
@@ -43,7 +45,7 @@ O.lua.autoformat = false
 
 -- javascript
 O.tsserver.formatter = 'prettier'
-O.tsserver.linter = nil
+O.tsserver.linter = 'eslint'
 O.tsserver.autoformat = true
 
 -- json

@@ -56,11 +56,7 @@ O = {
         diagnostics = {virtual_text = true, signs = true, underline = true}
     },
     tailwindls = {filetypes = {'html', 'css', 'scss', 'javascript', 'javascriptreact', 'typescript', 'typescriptreact'}},
-    clang = {diagnostics = {virtual_text = true, signs = true, underline = true}},
-	ruby = {
-		diagnostics = {virtualtext = true, signs = true, underline = true},
-		filetypes = {'rb', 'erb', 'rakefile'}
-	}
+    clang = {diagnostics = {virtual_text = true, signs = true, underline = true}}
     -- css = {formatter = '', autoformat = false, virtual_text = true},
     -- json = {formatter = '', autoformat = false, virtual_text = true}
 }
