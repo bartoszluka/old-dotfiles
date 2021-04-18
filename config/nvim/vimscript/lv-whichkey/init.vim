@@ -126,7 +126,7 @@ let g:which_key_map.l = {
       \ 'A' : [':Lspsaga range_code_action'          , 'selected action'],
       \ 'd' : [':Telescope lsp_document_diagnostics' , 'document diagnostics'],
       \ 'D' : [':Telescope lsp_workspace_diagnostics', 'workspace diagnostics'],
-      \ 'f' : [':LspFormatting'                      , 'format'],
+      \ 'f' : [':Neoformat'                          , 'format'],
       \ 'I' : [':LspInfo'                            , 'lsp info'],
       \ 'v' : [':LspVirtualTextToggle'               , 'lsp toggle virtual text'],
       \ 'l' : [':Lspsaga lsp_finder'                 , 'lsp finder'],
@@ -140,4 +140,25 @@ let g:which_key_map.l = {
       \ 'S' : [':Telescope lsp_workspace_symbols'    , 'workspace symbols'],
       \ }
 
+" " l is for language server protocol
+" let g:which_key_map.l = {
+"       \ 'name' : '+lsp' ,
+"       \ 'a' : [':Lspsaga code_action'                , 'code action'],
+"       \ 'A' : [':Lspsaga range_code_action'          , 'selected action'],
+"       \ 'd' : [':Telescope lsp_document_diagnostics' , 'document diagnostics'],
+"       \ 'D' : [':Telescope lsp_workspace_diagnostics', 'workspace diagnostics'],
+"       \ 'f' : [':LspFormatting'                          , 'format'], this does not seem to work!
+"       \ 'I' : [':LspInfo'                            , 'lsp info'],
+"       \ 'v' : [':LspVirtualTextToggle'               , 'lsp toggle virtual text'],
+"       \ 'l' : [':Lspsaga lsp_finder'                 , 'lsp finder'],
+"       \ 'L' : [':Lspsaga show_line_diagnostics'      , 'line_diagnostics'],
+"       \ 'p' : [':Lspsaga preview_definition'         , 'preview definition'],
+"       \ 'q' : [':Telescope quickfix'                 , 'quickfix'],
+"       \ 'r' : [':Lspsaga rename'                     , 'rename'],
+"       \ 'T' : [':LspTypeDefinition'                  , 'type defintion'],
+"       \ 'x' : [':cclose'                             , 'close quickfix'],
+"       \ 's' : [':Telescope lsp_document_symbols'     , 'document symbols'],
+"       \ 'S' : [':Telescope lsp_workspace_symbols'    , 'workspace symbols'],
+"       \ }
+" 
 call which_key#register('<Space>', "g:which_key_map")

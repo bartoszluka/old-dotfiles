@@ -22,7 +22,9 @@ local function require_plugin(plugin)
         end
     end
     --	print(ok, err, code)
-    if ok then vim.cmd('packadd ' .. plugin) end
+    if ok then
+        vim.cmd("packadd " .. plugin)
+    end
     return ok, err, code
 end
 
@@ -32,76 +34,76 @@ return require('packer').startup(function(use)
     -- Packer can manage itself as an optional plugin
     use 'wbthomason/packer.nvim'
 
-	-- code formatting
-	-- use 'sbdchd/neoformat'
+    -- code formatting
+    use 'sbdchd/neoformat'
 
-	-- vim surround
-	use 'tpope/vim-surround'
-	use 'kosayoda/nvim-lightbulb'
-	-- use {
-	--   'blackCauldron7/surround.nvim',
-	--   config = function()
-	-- 	require 'surround'.setup{}
-	--   end
-	-- }
+    -- vim surround
+    use 'tpope/vim-surround'
+    use 'kosayoda/nvim-lightbulb'
+    -- use {
+    --   'blackCauldron7/surround.nvim',
+    --   config = function()
+    -- 	require 'surround'.setup{}
+    --   end
+    -- }
 
-	-- have the directory follow files
-	use 'airblade/vim-rooter'
+    -- have the directory follow files
+    use 'airblade/vim-rooter'
 
-	-- In file navigation
+    -- In file navigation
     use 'unblevable/quick-scope'
     use 'phaazon/hop.nvim'
 
-	-- highlight colors
+    -- highlight colors
     use 'norcalli/nvim-colorizer.lua'
 
-	-- maximize current window
-	use 'szw/vim-maximizer'
+    -- maximize current window
+    use 'szw/vim-maximizer'
 
-	-- multiple cursors
-	use 'terryma/vim-multiple-cursors'
+    -- multiple cursors
+    use 'terryma/vim-multiple-cursors'
 
-	-- smooth scrolling
-	use 'psliwka/vim-smoothie'
+    -- smooth scrolling
+    use 'psliwka/vim-smoothie'
 
-	-- minimap
-	use 'wfxr/minimap.vim'
+    -- minimap
+    use 'wfxr/minimap.vim'
 
     -- TODO refactor all of this (for now it works, but yes I know it could be wrapped in a simpler function)
-    use {'neovim/nvim-lspconfig', opt=true}
-    use {'glepnir/lspsaga.nvim', opt=true}
-    use {'onsails/lspkind-nvim', opt=true}
-    use {'kabouzeid/nvim-lspinstall', opt=true}
-	-- tabnine
-	-- use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
+    use {'neovim/nvim-lspconfig', opt = true}
+    use {'glepnir/lspsaga.nvim', opt = true}
+    use {'onsails/lspkind-nvim', opt = true}
+    use {'kabouzeid/nvim-lspinstall', opt = true}
+    -- tabnine
+    -- use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
     -- Telescope
     -- use {'nvim-lua/popup.nvim', opt=true}
     -- use {'nvim-lua/plenary.nvim', opt=true}
     -- use {'nvim-telescope/telescope.nvim', opt=true}
 
-	-- Telescope again
-	use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} }
-	use 'nvim-telescope/telescope-media-files.nvim'
-	use 'junegunn/fzf.vim'
+    -- Telescope again
+    use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}}
+    use 'nvim-telescope/telescope-media-files.nvim'
+    use 'junegunn/fzf.vim'
 
     -- Debugging
-    use {'mfussenegger/nvim-dap', opt=true}
+    use {'mfussenegger/nvim-dap', opt = true}
 
     -- Autocomplete
-    use {'hrsh7th/nvim-compe', opt=true}
-    use {'hrsh7th/vim-vsnip', opt=true}
-    use {"rafamadriz/friendly-snippets", opt=true}
+    use {'hrsh7th/nvim-compe', opt = true}
+    use {'hrsh7th/vim-vsnip', opt = true}
+    use {"rafamadriz/friendly-snippets", opt = true}
 
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    use {'windwp/nvim-ts-autotag', opt=true}
+    use {'windwp/nvim-ts-autotag', opt = true}
 
     -- Explorer
     use 'kyazdani42/nvim-tree.lua'
     -- TODO remove when open on dir is supported by nvimtree
     use 'kevinhwang91/rnvimr'
 
-	use {'lukas-reineke/indent-blankline.nvim', opt=true, branch = 'lua'}
+    use {'lukas-reineke/indent-blankline.nvim', opt = true, branch = 'lua'}
     use {'lewis6991/gitsigns.nvim', opt = true}
     use {'liuchengxu/vim-which-key', opt = true}
     use {'ChristianChiarulli/dashboard-nvim', opt = true}

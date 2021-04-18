@@ -5,13 +5,14 @@ Formatters and linters should be
 filled in as strings with either
 a global executable or a path to
 an executable
-]]
--- general
+]] -- general
 O.auto_complete = true
 O.colorscheme = 'lunar'
 O.auto_close_tree = 1
 O.wrap_lines = false
 O.relative_number = false
+vim.o.scrolloff = 3
+vim.o.sidescrolloff = 5
 
 -- if you don't want all the parsers change this to a table of the ones you want
 O.treesitter.ensure_installed = "all"
@@ -19,7 +20,6 @@ O.treesitter.ignore_install = {"haskell"}
 O.treesitter.highlight.enabled = true
 O.treesitter.playground.enabled = true
 O.treesitter.rainbow.enabled = false
-
 
 O.clang.diagnostics.virtual_text = false
 O.clang.diagnostics.signs = false
@@ -41,7 +41,7 @@ O.python.diagnostics.underline = true
 -- TODO look into stylua
 O.lua.formatter = 'lua-format'
 -- O.lua.formatter = 'lua-format'
-O.lua.autoformat = false
+O.lua.autoformat = true
 
 -- javascript
 O.tsserver.formatter = 'prettier'
