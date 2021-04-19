@@ -22,9 +22,7 @@ local function require_plugin(plugin)
         end
     end
     --	print(ok, err, code)
-    if ok then
-        vim.cmd("packadd " .. plugin)
-    end
+    if ok then vim.cmd("packadd " .. plugin) end
     return ok, err, code
 end
 
@@ -92,7 +90,7 @@ return require('packer').startup(function(use)
     -- Autocomplete
     use {'hrsh7th/nvim-compe', opt = true}
     use {'hrsh7th/vim-vsnip', opt = true}
-    use {"rafamadriz/friendly-snippets", opt = true}
+    use {'rafamadriz/friendly-snippets', opt = true}
 
     -- Treesitter
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
@@ -131,6 +129,7 @@ return require('packer').startup(function(use)
     require_plugin('nvim-dap')
     require_plugin('nvim-compe')
     require_plugin('vim-vsnip')
+    require_plugin('friendly-snippets')
     require_plugin('nvim-treesitter')
     require_plugin('nvim-ts-autotag')
     require_plugin('nvim-tree.lua')

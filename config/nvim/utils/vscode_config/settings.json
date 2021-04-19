@@ -983,7 +983,7 @@
   "kite.showWelcomeNotificationOnStartup": false,
   "python.terminal.activateEnvironment": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrainsMono Nerd Font, Hack, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode Nerd Font Mono, JetBrainsMono Nerd Font, Hack, Menlo, Monaco, 'Courier New', monospace",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -1003,7 +1003,7 @@
   "python.condaPath": "$HOME/.miniconda/bin/conda",
   "python.formatting.provider": "black",
   "python.insidersChannel": "off",
-  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.shell.linux": "/bin/fish",
   "terminal.external.linuxExec": "/usr/bin/alacritty",
   "code-runner.executorMap": {
     "python": "$pythonPath $fileName",

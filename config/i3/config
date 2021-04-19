@@ -462,7 +462,7 @@ exec --no-startup-id flameshot &
 exec --no-startup-id ulauncher --no-window-shadow &
 
 # redshift 
-exec --no-startup-id redshift-gtk -l 52.29:21.10
+exec --no-startup-id redshift-gtk
 # exec --no-startup-id redshift-gtk -c ~/.config/redshift.conf
 # exec --no-startup-id redshift -l 52.29:21.10 &
 
