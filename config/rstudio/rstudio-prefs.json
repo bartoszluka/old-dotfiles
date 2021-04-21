@@ -4,9 +4,10 @@
     "custom_shell_command": "/usr/bin/fish",
     "editor_keybindings": "vim",
     "font_size_points": 12,
-    "editor_theme": "Dracula",
+    "editor_theme": "Material",
     "jobs_tab_visibility": "shown",
     "global_theme": "alternate",
     "syntax_color_console": true,
-    "source_with_echo": true
+    "source_with_echo": true,
+    "pdf_previewer": "none"
 }
