@@ -5,11 +5,11 @@ vim.g.mapleader = ' '
 vim.api.nvim_set_keymap('n', 'Y', 'y$', {noremap = true, silent = true})
 
 -- close window
-vim.api.nvim_set_keymap('n', '<Leader>q', ':q', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>q', ':q<CR>', {noremap = true, silent = true})
 
 -- multiple cursors
---vim.cmd([[ g:VM_maps={} ]])
---vim.cmd([[let g:VM_maps['Find Under'] = '<C-m>']])
+-- vim.cmd([[ g:VM_maps={} ]])
+-- vim.cmd([[let g:VM_maps['Find Under'] = '<C-m>']])
 -- = '<C-m>' let g:VM_maps['Find Subword Under'] = '<C-m>' let g:VM_maps["Select Cursor Down"] = '<M-C-j>' let g:VM_maps["Select Cursor Up"]   = '<M-C-k>' ]])
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
