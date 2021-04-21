@@ -59,7 +59,7 @@ return require('packer').startup(function(use)
     use 'szw/vim-maximizer'
 
     -- multiple cursors
-    use 'terryma/vim-multiple-cursors'
+    use {'mg979/vim-visual-multi', branch = 'master'}
 
     -- smooth scrolling
     use 'psliwka/vim-smoothie'

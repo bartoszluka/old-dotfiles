@@ -31,6 +31,11 @@ set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 set -g EDITOR nvim
 # set -x MANPAGER "bat"
 
+#yarn
+abbr -a ys yarn start
+abbr -a yi yarn install
+abbr -a ya yarn add
+
 #lazygit
 abbr -a lg lazygit
 

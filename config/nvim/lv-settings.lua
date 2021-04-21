@@ -53,5 +53,6 @@ O.tsserver.diagnostics.virtual_text = true
 
 -- json
 O.json.autoformat = true
+O.json.formatter = 'prettier'
 
 -- create custom autocommand field (This would be easy with lua)
