@@ -57,7 +57,8 @@ abbr -a q exit
 abbr -a :q exit
 
 #list
-alias ls='exa --color=always --group-directories-first'
+alias ls='exa --color=always --all --group-directories-first --icons'
+
 # alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
