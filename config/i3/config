@@ -441,10 +441,10 @@ exec_always --no-startup-id autotiling
 for_window [class="Spotify"] focus
 
 #messeging
-exec --no-startup-id discord
-for_window [title="Discord"] focus
+exec --no-startup-id discord-canary
+for_window [title="Discord"] #focus
 exec --no-startup-id caprine
-for_window [class="Caprine"] focus
+for_window [class="Caprine"] #focus
 
 
 # TRAY APPLICATIONS
