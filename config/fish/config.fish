@@ -27,9 +27,14 @@ set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 
 # set PATH $PATH:/home/bartek/Scripts
 
+status --is-interactive; and . (jump shell | psub)
+
 #nvim as editor
 set -g EDITOR nvim
 # set -x MANPAGER "bat"
+
+# git?
+abbr -a vig nvim .gitignore
 
 #yarn
 abbr -a ys yarn start

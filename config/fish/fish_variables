@@ -30,6 +30,7 @@ SETUVAR _fish_abbr_updqte:sudo\x20pacman\x20\x2dSyu
 SETUVAR _fish_abbr_updte:sudo\x20pacman\x20\x2dSyu
 SETUVAR _fish_abbr_upqll:yay\x20\x2dSyu\x20\x2d\x2dnoconfirm
 SETUVAR _fish_abbr_v:nvim
+SETUVAR _fish_abbr_vig:nvim\x20\x2egitignore
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR _fish_abbr_y:yay\x20\x2dS
 SETUVAR _fish_abbr_ya:yarn\x20add
