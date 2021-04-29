@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- code formatting
-    use 'sbdchd/neoformat'
+--    use 'sbdchd/neoformat'
 
     -- vim surround
     use 'tpope/vim-surround'
@@ -103,7 +103,8 @@ return require('packer').startup(function(use)
 
     use {'lukas-reineke/indent-blankline.nvim', opt = true, branch = 'lua'}
     use {'lewis6991/gitsigns.nvim', opt = true}
-    use {'liuchengxu/vim-which-key', opt = true}
+--    use {'liuchengxu/vim-which-key', opt = true}
+        use {"folke/which-key.nvim", opt = true}
     use {'ChristianChiarulli/dashboard-nvim', opt = true}
     use {'windwp/nvim-autopairs', opt = true}
     use {'terrortylor/nvim-comment', opt = true}
@@ -119,29 +120,28 @@ return require('packer').startup(function(use)
     use {'glepnir/galaxyline.nvim', opt = true}
     use {'romgrk/barbar.nvim', opt = true}
 
-    require_plugin('nvim-lspconfig')
-    require_plugin('lspsaga.nvim')
-    require_plugin('lspkind-nvim')
-    require_plugin('nvim-lspinstall')
-    require_plugin('popup.nvim')
-    require_plugin('plenary.nvim')
-    require_plugin('telescope.nvim')
-    require_plugin('nvim-dap')
-    require_plugin('nvim-compe')
-    require_plugin('vim-vsnip')
-    require_plugin('friendly-snippets')
-    require_plugin('nvim-treesitter')
-    require_plugin('nvim-ts-autotag')
-    require_plugin('nvim-tree.lua')
-    require_plugin('gitsigns.nvim')
-    require_plugin('vim-which-key')
-    require_plugin('dashboard-nvim')
-    require_plugin('nvim-autopairs')
-    require_plugin('nvim-comment')
-    require_plugin('nvim-bqf')
-    require_plugin('nvcode-color-schemes.vim')
-    require_plugin('nvim-web-devicons')
-    require_plugin('galaxyline.nvim')
-    require_plugin('barbar.nvim')
-end)
-
+        require_plugin("nvim-lspconfig")
+        require_plugin("lspsaga.nvim")
+        require_plugin("nvim-lspinstall")
+        require_plugin("friendly-snippets")
+        require_plugin("popup.nvim")
+        require_plugin("plenary.nvim")
+        require_plugin("telescope.nvim")
+        require_plugin("nvim-dap")
+        require_plugin("nvim-compe")
+        require_plugin("vim-vsnip")
+        require_plugin("nvim-treesitter")
+        require_plugin("nvim-ts-autotag")
+        require_plugin("nvim-tree.lua")
+        require_plugin("gitsigns.nvim")
+        require_plugin("which-key.nvim")
+        require_plugin("dashboard-nvim")
+        require_plugin("nvim-autopairs")
+        require_plugin("nvim-comment")
+        require_plugin("nvim-bqf")
+        require_plugin("nvcode-color-schemes.vim")
+        require_plugin("nvim-web-devicons")
+        require_plugin("galaxyline.nvim")
+        require_plugin("barbar.nvim")
+    end
+)

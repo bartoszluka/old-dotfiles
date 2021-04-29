@@ -8,7 +8,7 @@ require('keymappings')
 require('colorscheme')
 require('lv-galaxyline')
 require('lv-comment')
-require('lv-lspkind')
+-- require('lv-lspkind')
 require('lv-compe')
 require('lv-barbar')
 require('lv-dashboard')
@@ -17,8 +17,8 @@ require('lv-gitsigns')
 require('lv-nvimtree')
 require('lv-treesitter')
 require('lv-autopairs')
-require('lv-barbar')
 require('lv-rnvimr')
+require('lv-which-key')
 
 -- my additions
 require('lv-hop')
@@ -28,7 +28,7 @@ require('lv-colorizer')
 -- require('lv-surround')
 
 -- Which Key (Hope to replace with Lua plugin someday)
-vim.cmd('source ~/.config/nvim/vimscript/lv-whichkey/init.vim')
+-- vim.cmd('source ~/.config/nvim/vimscript/lv-whichkey/init.vim')
 vim.cmd('source ~/.config/nvim/vimscript/functions.vim')
 
 -- LSP
@@ -57,4 +57,5 @@ require('lsp.svelte-ls')
 require('lsp.tailwindcss-ls')
 require('lsp.ruby-ls')
 require('lsp.kotlin-ls')
+require('lsp.vue-ls')
 

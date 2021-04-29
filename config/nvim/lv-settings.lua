@@ -8,7 +8,7 @@ an executable
 ]] -- general
 O.auto_complete = true
 O.colorscheme = 'lunar'
-O.auto_close_tree = 1
+O.auto_close_tree = 0
 O.wrap_lines = false
 O.relative_number = false
 vim.o.scrolloff = 3
