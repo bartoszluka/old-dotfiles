@@ -1,32 +1,32 @@
 # Colors (One Darker)
 colors:
-  # COLORSCHEME: palenight.yml
+  # COLORSCHEME: nord.yaml
   # Default colors
   primary:
-    background: "0x292d3e"
-    foreground: "0xd0d0d0"
+    background: '0x2E3440'
+    foreground: '0xD8DEE9'
 
   # Normal colors
   normal:
-    black: "0x292d3e"
-    red: "0xf07178"
-    green: "0xc3e88d"
-    yellow: "0xffcb6b"
-    blue: "0x82aaff"
-    magenta: "0xc792ea"
-    cyan: "0x89ddff"
-    white: "0xd0d0d0"
+    black: '0x3B4252'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x88C0D0'
+    white: '0xE5E9F0'
 
   # Bright colors
   bright:
-    black: "0x434758"
-    red: "0xff8b92"
-    green: "0xddffa7"
-    yellow: "0xffe585"
-    blue: "0x9cc4ff"
-    magenta: "0xe1acff"
-    cyan: "0xa3f7ff"
-    white: "0xffffff"
+    black: '0x4C566A'
+    red: '0xBF616A'
+    green: '0xA3BE8C'
+    yellow: '0xEBCB8B'
+    blue: '0x81A1C1'
+    magenta: '0xB48EAD'
+    cyan: '0x8FBCBB'
+    white: '0xECEFF4'
 cursor:
   style:
     shape: Beam
@@ -75,18 +75,18 @@ window:
   # draw_bold_text_with_bright_colors: true
 
   # selection:
-  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
   save_to_clipboard: true
   live_config_reload: true
 
 key_bindings:
-  - { key: V, mods: Control|Shift, action: Paste }
-  - { key: C, mods: Control|Shift, action: Copy }
-  - { key: Key0, mods: Control, action: ResetFontSize }
-  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - {key: V, mods: Control|Shift, action: Paste}
+  - {key: C, mods: Control|Shift, action: Copy}
+  - {key: Key0, mods: Control, action: ResetFontSize}
+  - {key: Equals, mods: Control, action: IncreaseFontSize}
   # - { key: Add, mods: Control, action: IncreaseFontSize }
   # - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  - { key: Minus, mods: Control, action: DecreaseFontSize }
-  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+  - {key: Minus, mods: Control, action: DecreaseFontSize}
+  - {key: N, mods: Control|Shift, action: SpawnNewInstance}
 mouse_bindings:
-  - { mouse: Right, action: Paste }
+  - {mouse: Right, action: Paste}
