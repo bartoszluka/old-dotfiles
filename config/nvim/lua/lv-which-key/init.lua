@@ -46,6 +46,7 @@ local opts = {
 -- Set leader
 -- vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ';'
 
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
@@ -76,7 +77,13 @@ vim.api.nvim_set_keymap("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", {norem
 vim.api.nvim_set_keymap("n", "<leader>v", "<C-W>v", {noremap = true, silent = true})
 
 -- split current buffer
-vim.api.nvim_set_keymap("n", "<leader>m", ":MaximizerToggle", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>m", ":MaximizerToggle<CR>", {noremap = true, silent = true})
+
+-- split current buffer
+vim.api.nvim_set_keymap("n", "<leader>r", ":Lspsaga rename<CR>", {noremap = true, silent = true})
+
+-- split current buffer
+vim.api.nvim_set_keymap("n", "<leader>z", ":Goyo<CR>:Limelight!!<CR>", {noremap = true, silent = true})
 
 -- TODO create entire treesitter section
 
@@ -89,6 +96,7 @@ local mappings = {
     ["w"] = "Save file",
     ["v"] = "Split",
     ["m"] = "Maximize",
+    ["r"] = "Rename symbol",
     d = {
         name = "+Debug",
         b = {"<cmd>DebugToggleBreakpoint<cr>", "Toggle Breakpoint"},
@@ -106,7 +114,11 @@ local mappings = {
         r = {"<cmd>ResetHunk<cr>", "Reset Hunk"},
         R = {"<cmd>ResetBuffer<cr>", "Reset Buffer"},
         s = {"<cmd>StageHunk<cr>", "Stage Hunk"},
-        u = {"<cmd>UndoStageHunk<cr>", "Undo Stage Hunk"}
+        u = {"<cmd>UndoStageHunk<cr>", "Undo Stage Hunk"},
+        o = {"<cmd>Telescope git_status<cr>", "Open changed file"},
+        b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
+        c = {"<cmd>Telescope git_commits<cr>", "Checkout commit"},
+        C = {"<cmd>Telescope git_bcommits<cr>", "Checkout commit(for current file)"}
     },
     l = {
         name = "+LSP",
@@ -129,7 +141,7 @@ local mappings = {
 
     s = {
         name = "+Search",
-        b = {"<cmd>Telescope git_branches<cr>", "File"},
+        b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
         c = {"<cmd>Telescope colorscheme<cr>", "Colorscheme"},
         d = {"<cmd>Telescope lsp_document_diagnostics<cr>", "Document Diagnostics"},
         D = {"<cmd>Telescope lsp_workspace_diagnostics<cr>", "Workspace Diagnostics"},

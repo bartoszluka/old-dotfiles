@@ -25,6 +25,17 @@ set -U fish_pager_color_description   yellow
 set -U fish_pager_color_prefix        'white' '--bold' '--underline'
 set -U fish_pager_color_progress      'brwhite' '--background=cyan'
 
+# colors for "less"
+set -xU LESS_TERMCAP_md (printf "\e[01;31m")
+set -xU LESS_TERMCAP_me (printf "\e[0m")
+set -xU LESS_TERMCAP_se (printf "\e[0m")
+set -xU LESS_TERMCAP_so (printf "\e[01;44;33m")
+set -xU LESS_TERMCAP_ue (printf "\e[0m")
+set -xU LESS_TERMCAP_us (printf "\e[01;32m")
+set -xU LESS "--RAW-CONTROL-CHARS"
+
+set -xU LESSOPEN "| /usr/bin/highlight --out-format=ansi %s --style nord --out-format xterm256 --force"
+
 # set PATH $PATH:/home/bartek/Scripts
 
 status --is-interactive; and . (jump shell | psub)
@@ -150,3 +161,5 @@ alias bupskel='cp -Rf /etc/skel ~/.skel-backup-(date +%Y.%m.%d-%H.%M.%S)'
 set -gx PF_SOURCE "/home/bartek/.config/pfetch/pfetch.config"
 set -g fish_greeting 
 # pfetch
+
+fish_vi_key_bindings

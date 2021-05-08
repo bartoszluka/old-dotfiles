@@ -29,7 +29,8 @@ colors:
     white: '0xECEFF4'
 cursor:
   style:
-    shape: Beam
+    # shape: Beam
+    shape: Block
     #     blinking: On
 
 font:

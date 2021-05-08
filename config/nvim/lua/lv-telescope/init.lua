@@ -16,7 +16,7 @@ require('telescope').setup {
         layout_strategy = "horizontal",
         layout_defaults = {horizontal = {mirror = false}, vertical = {mirror = false}},
         file_sorter = require'telescope.sorters'.get_fuzzy_file,
-        file_ignore_patterns = {},
+        file_ignore_patterns = {'cache/*'},
         generic_sorter = require'telescope.sorters'.get_generic_fuzzy_sorter,
         shorten_path = true,
         winblend = 0,
@@ -57,9 +57,12 @@ require('telescope').setup {
             n = {
                 ["<C-j>"] = actions.move_selection_next,
                 ["<C-k>"] = actions.move_selection_previous,
-                ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
+                ["<C-q>"] = actions.smart_send_to_qflist + actions.open_qflist
                 -- ["<C-i>"] = my_cool_custom_action,
             }
-        }
+        },
+        extensions = {fzy_native = {override_generic_sorter = false, override_file_sorter = true}}
     }
 }
+require'telescope'.load_extension('project')
+require'telescope'.load_extension('fzy_native')

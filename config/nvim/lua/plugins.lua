@@ -33,11 +33,18 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- code formatting
---    use 'sbdchd/neoformat'
+    -- not needed since LspFormatting works
+    -- use 'sbdchd/neoformat'
+    use 'junegunn/goyo.vim'
+    use 'junegunn/limelight.vim'
+    -- function as a text object
+    use 'kana/vim-textobj-user'
+    use 'kana/vim-textobj-function'
 
     -- vim surround
     use 'tpope/vim-surround'
     use 'kosayoda/nvim-lightbulb'
+    -- other surround that does not work
     -- use {
     --   'blackCauldron7/surround.nvim',
     --   config = function()
@@ -45,6 +52,7 @@ return require('packer').startup(function(use)
     --   end
     -- }
 
+    use {'jalvesaq/Nvim-R', branch = 'stable'}
     -- have the directory follow files
     use 'airblade/vim-rooter'
 
@@ -59,7 +67,7 @@ return require('packer').startup(function(use)
     use 'szw/vim-maximizer'
 
     -- multiple cursors
-    use {'mg979/vim-visual-multi', branch = 'master'}
+    -- use {'mg979/vim-visual-multi', branch = 'master'}
 
     -- smooth scrolling
     use 'psliwka/vim-smoothie'
@@ -70,7 +78,7 @@ return require('packer').startup(function(use)
     -- TODO refactor all of this (for now it works, but yes I know it could be wrapped in a simpler function)
     use {'neovim/nvim-lspconfig', opt = true}
     use {'glepnir/lspsaga.nvim', opt = true}
-    use {'onsails/lspkind-nvim', opt = true}
+    --    use {'onsails/lspkind-nvim', opt = true}
     use {'kabouzeid/nvim-lspinstall', opt = true}
     -- tabnine
     -- use {'tzachar/compe-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-compe'}
@@ -82,7 +90,8 @@ return require('packer').startup(function(use)
     -- Telescope again
     use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}}
     use 'nvim-telescope/telescope-media-files.nvim'
-    use 'junegunn/fzf.vim'
+    use 'nvim-telescope/telescope-fzy-native.nvim'
+    use 'nvim-telescope/telescope-project.nvim'
 
     -- Debugging
     use {'mfussenegger/nvim-dap', opt = true}
@@ -97,14 +106,14 @@ return require('packer').startup(function(use)
     use {'windwp/nvim-ts-autotag', opt = true}
 
     -- Explorer
-    use 'kyazdani42/nvim-tree.lua'
+    use "kyazdani42/nvim-tree.lua"
     -- TODO remove when open on dir is supported by nvimtree
     use 'kevinhwang91/rnvimr'
 
     use {'lukas-reineke/indent-blankline.nvim', opt = true, branch = 'lua'}
     use {'lewis6991/gitsigns.nvim', opt = true}
---    use {'liuchengxu/vim-which-key', opt = true}
-        use {"folke/which-key.nvim", opt = true}
+    --    use {'liuchengxu/vim-which-key', opt = true}
+    use {"folke/which-key.nvim", opt = true}
     use {'ChristianChiarulli/dashboard-nvim', opt = true}
     use {'windwp/nvim-autopairs', opt = true}
     use {'terrortylor/nvim-comment', opt = true}
@@ -120,28 +129,27 @@ return require('packer').startup(function(use)
     use {'glepnir/galaxyline.nvim', opt = true}
     use {'romgrk/barbar.nvim', opt = true}
 
-        require_plugin("nvim-lspconfig")
-        require_plugin("lspsaga.nvim")
-        require_plugin("nvim-lspinstall")
-        require_plugin("friendly-snippets")
-        require_plugin("popup.nvim")
-        require_plugin("plenary.nvim")
-        require_plugin("telescope.nvim")
-        require_plugin("nvim-dap")
-        require_plugin("nvim-compe")
-        require_plugin("vim-vsnip")
-        require_plugin("nvim-treesitter")
-        require_plugin("nvim-ts-autotag")
-        require_plugin("nvim-tree.lua")
-        require_plugin("gitsigns.nvim")
-        require_plugin("which-key.nvim")
-        require_plugin("dashboard-nvim")
-        require_plugin("nvim-autopairs")
-        require_plugin("nvim-comment")
-        require_plugin("nvim-bqf")
-        require_plugin("nvcode-color-schemes.vim")
-        require_plugin("nvim-web-devicons")
-        require_plugin("galaxyline.nvim")
-        require_plugin("barbar.nvim")
-    end
-)
+    require_plugin("nvim-lspconfig")
+    require_plugin("lspsaga.nvim")
+    require_plugin("nvim-lspinstall")
+    require_plugin("friendly-snippets")
+    require_plugin("popup.nvim")
+    require_plugin("plenary.nvim")
+    require_plugin("telescope.nvim")
+    require_plugin("nvim-dap")
+    require_plugin("nvim-compe")
+    require_plugin("vim-vsnip")
+    require_plugin("nvim-treesitter")
+    require_plugin("nvim-ts-autotag")
+    require_plugin("nvim-tree.lua")
+    require_plugin("gitsigns.nvim")
+    require_plugin("which-key.nvim")
+    require_plugin("dashboard-nvim")
+    require_plugin("nvim-autopairs")
+    require_plugin("nvim-comment")
+    require_plugin("nvim-bqf")
+    require_plugin("nvcode-color-schemes.vim")
+    require_plugin("nvim-web-devicons")
+    require_plugin("galaxyline.nvim")
+    require_plugin("barbar.nvim")
+end)

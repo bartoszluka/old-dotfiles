@@ -16,16 +16,7 @@
 -- '     `-...-\'    ███████  ██████  ██   ████ ██   ██ ██   ██   ████   ██ ██      ██ ',
 --
 -- }
-vim.g.dashboard_custom_header = {
-
-'                 _..._                                                                           ',
-'               .\'   (_`.    _                         __     ___           ',
-'              :  .      :  | |   _   _ _ __   __ _ _ _\\ \\   / (_)_ __ ___  ',
-'              :)    ()  :  | |  | | | | \'_ \\ / _` | \'__\\ \\ / /| | \'_ ` _ \\ ',
-'              `.   .   .\'  | |__| |_| | | | | (_| | |   \\ V / | | | | | | |',
-'                `-...-\'    |_____\\__,_|_| |_|\\__,_|_|    \\_/  |_|_| |_| |_|',
-
-}
+vim.g.dashboard_custom_header = O.dashboard.custom_header
 
 vim.g.dashboard_default_executive = 'telescope'
 
@@ -34,10 +25,14 @@ vim.g.dashboard_custom_section = {
     b = {description = {'  Recently Used Files'}, command = 'Telescope oldfiles'},
     c = {description = {'  Load Last Session  '}, command = 'SessionLoad'},
     d = {description = {'  Find Word          '}, command = 'Telescope live_grep'},
-    e = {description = {'  Settings           '}, command = ':e ~/.dotfiles/config/nvim/lv-settings.lua'}
+    e = {description = {'  Settings           '}, command = ':e ~/.dotfiles/config/nvim/lv-settings.lua'},
+    f = {description = {'  Keymaps            '}, command = ':e ~/.dotfiles/config/nvim/lua/keymappings.lua'},
+    g = {description = {'  Plugins            '}, command = ':e ~/.dotfiles/config/nvim/lua/plugins.lua'},
+    h = {description = {'  Projects           '}, command = 'Telescope project'}
     -- e = {description = {'  Marks              '}, command = 'Telescope marks'}
 }
 
+-- g = {description = {'  Plugins            '}, command = ':e ~/.config/nvim/lua/plugins.lua'},
 -- file_browser = {description = {' File Browser'}, command = 'Telescope find_files'},
 
 -- vim.g.dashboard_custom_shortcut = {
@@ -50,4 +45,4 @@ vim.g.dashboard_custom_section = {
 -- find_history = 'SPC f h',
 
 -- vim.g.dashboard_session_directory = '~/.cache/nvim/session'
-vim.g.dashboard_custom_footer = {'chrisatmachine.com'}
+vim.g.dashboard_custom_footer = O.dashboard.footer

@@ -14,6 +14,13 @@ O.relative_number = false
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
 
+vim.cmd("let rout_follow_colorscheme = 1")
+vim.cmd("let rrst_syn_hl_chunk = 1")
+vim.cmd("let rmd_syn_hl_chunk = 1")
+-- dashboard
+-- O.dashboard.custom_header = {""}
+-- O.dashboard.footer = {""}
+
 -- if you don't want all the parsers change this to a table of the ones you want
 O.treesitter.ensure_installed = "all"
 O.treesitter.ignore_install = {"haskell"}
@@ -36,6 +43,9 @@ O.python.autoformat = true
 O.python.diagnostics.virtual_text = true
 O.python.diagnostics.signs = true
 O.python.diagnostics.underline = true
+O.python.analysis.type_checking = "off"
+O.python.analysis.auto_search_paths = true
+O.python.analysis.use_library_code_types = true
 
 -- lua
 -- TODO look into stylua
@@ -46,13 +56,14 @@ O.lua.autoformat = true
 -- javascript
 O.tsserver.formatter = 'prettier'
 O.tsserver.linter = 'eslint'
-O.tsserver.autoformat = true
-O.tsserver.diagnostics.signs = true
-O.tsserver.diagnostics.underline = false
-O.tsserver.diagnostics.virtual_text = true
+O.tsserver.autoformat = false
 
 -- json
 O.json.autoformat = true
 O.json.formatter = 'prettier'
+
+-- shell
+O.sh.linter = 'shellcheck'
+O.sh.formatter = 'shfmt'
 
 -- create custom autocommand field (This would be easy with lua)

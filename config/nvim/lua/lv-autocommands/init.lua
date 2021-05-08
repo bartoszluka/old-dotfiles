@@ -1,6 +1,6 @@
 local utils = require('lv-utils')
 
-local auto_formatters = {            }
+local auto_formatters = {}
 
 local python_autoformat = {'BufWritePre', '*.py', 'lua vim.lsp.buf.formatting_sync(nil, 1000)'}
 if O.python.autoformat then table.insert(auto_formatters, python_autoformat) end
@@ -12,8 +12,8 @@ local typescriptreact_autoformat = {'BufWritePre', '*.tsx', 'lua vim.lsp.buf.for
 if O.tsserver.autoformat then
     table.insert(auto_formatters, javascript_autoformat)
     table.insert(auto_formatters, javascriptreact_autoformat)
-	table.insert(auto_formatters, typescript_autoformat)
-	table.insert(auto_formatters, typescriptreact_autoformat)
+    table.insert(auto_formatters, typescript_autoformat)
+    table.insert(auto_formatters, typescriptreact_autoformat)
 end
 
 local lua_format = {'BufWritePre', '*.lua', 'lua vim.lsp.buf.formatting_sync(nil, 1000)'}
@@ -59,7 +59,8 @@ utils.define_augroups({
     _buffer_bindings = {
         {'FileType', 'dashboard', 'nnoremap <silent> <buffer> q :q<CR>'},
         {'FileType', 'lspinfo', 'nnoremap <silent> <buffer> q :q<CR>'},
-        {'FileType', 'floaterm', 'nnoremap <silent> <buffer> q :q<CR>'},
+        -- {'FileType', 'lspinfo', 'nnoremap <silent> <buffer> <ESC> :q<CR>'},
+        {'FileType', 'floaterm', 'nnoremap <silent> <buffer> q :q<CR>'}
     },
     _auto_formatters = auto_formatters
 })
