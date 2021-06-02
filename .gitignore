@@ -130,14 +130,5 @@ BetterDiscord/bdstorage.json
 teams (deleted)/CS_skylib/CS_orgid#3Ab619d4fb-051c-4b3e-be91-4bc6bc515ed8.conf
 teams (deleted)/CS_skylib/CS_shared.conf
 
-config/Code/User/globalStorage/state.vscdb
-config/Code/User/globalStorage/state.vscdb.backup
-config/Code/User/workspaceStorage/7fead0c26bacf1243eac50006958e85f/state.vscdb
-config/Code/User/workspaceStorage/7fead0c26bacf1243eac50006958e85f/state.vscdb.backup
-config/Code/User/workspaceStorage/7fead0c26bacf1243eac50006958e85f/workspace.json
-config/Code/User/workspaceStorage/8d80decd91751f51a38887c323cb01c4/state.vscdb
-config/Code/User/workspaceStorage/8d80decd91751f51a38887c323cb01c4/state.vscdb.backup
-config/Code/User/workspaceStorage/8d80decd91751f51a38887c323cb01c4/workspace.json
-config/Code/User/workspaceStorage/f0f3b2de77a7efc0f580bce4ec6617cf/state.vscdb
-config/Code/User/workspaceStorage/f0f3b2de77a7efc0f580bce4ec6617cf/state.vscdb.backup
-config/Code/User/workspaceStorage/f0f3b2de77a7efc0f580bce4ec6617cf/workspace.json
+config/Code/User/globalStorage/
+config/Code/User/workspaceStorage/
