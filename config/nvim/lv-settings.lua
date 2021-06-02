@@ -14,9 +14,6 @@ O.relative_number = false
 vim.o.scrolloff = 3
 vim.o.sidescrolloff = 5
 
-vim.cmd("let rout_follow_colorscheme = 1")
-vim.cmd("let rrst_syn_hl_chunk = 1")
-vim.cmd("let rmd_syn_hl_chunk = 1")
 -- dashboard
 -- O.dashboard.custom_header = {""}
 -- O.dashboard.footer = {""}

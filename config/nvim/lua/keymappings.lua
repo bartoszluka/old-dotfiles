@@ -1,7 +1,7 @@
 -- RStudio like keybindings
-vim.api.nvim_set_keymap('i', '<A-.>', '->', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('i', '<A-,>', '<-', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('i', '<C-m>', '%>%', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<A-.>', ' -> ', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('i', '<A-,>', ' <- ', {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('i', ',.', ' %>% ', {noremap = true, silent = true})
 
 -- Y acts the same as C/D - copy to the end of the line
 vim.api.nvim_set_keymap('n', 'Y', 'y$', {noremap = true, silent = true})

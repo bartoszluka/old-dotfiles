@@ -162,4 +162,5 @@ set -gx PF_SOURCE "/home/bartek/.config/pfetch/pfetch.config"
 set -g fish_greeting 
 # pfetch
 
-fish_vi_key_bindings
+# fish_vi_key_bindings
+fish_default_key_bindings

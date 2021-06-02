@@ -46,10 +46,17 @@ local opts = {
 -- Set leader
 -- vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ';'
+-- vim.g.maplocalleader = ';'
+-- vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = "\\"
+-- vim.cmd("let maplocalleader=\"\\<BS>\"")
+vim.cmd("map <BS> \\")
+-- vim.api.nvim_set_keymap('n', "<BS>", "\\", {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap('v', '<BS>', '\\', {noremap = true, silent = true})
 
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<ESC>', ':set nohlsearch<CR>', {noremap = true, silent = true})
 
 -- explorer
 vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
@@ -84,6 +91,7 @@ vim.api.nvim_set_keymap("n", "<leader>r", ":Lspsaga rename<CR>", {noremap = true
 
 -- split current buffer
 vim.api.nvim_set_keymap("n", "<leader>z", ":Goyo<CR>:Limelight!!<CR>", {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap("n", "<leader>z", "GoyoEnter", {noremap = true, silent = true})
 
 -- TODO create entire treesitter section
 
